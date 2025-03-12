@@ -1,13 +1,18 @@
 
-import React from 'react'
+import Sidebar from '@/components/Sidebar';
+import { ReduxProviders } from '../../../../redux/provider';
 
-function AdminLayout() {
+export default function AdminLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
     return (
-        <div>
-
-            Admin Layout
-        </div>
-    )
+        <ReduxProviders>
+            <div className="flex">
+                <Sidebar />
+                <main className="flex-1 p-8">{children}</main>
+            </div>
+        </ReduxProviders>
+    );
 }
-
-export default AdminLayout
