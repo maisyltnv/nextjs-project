@@ -1,8 +1,12 @@
+
 import React from 'react'
 
 function AdminLayout() {
     return (
-        <div>AdminLayout</div>
+        <div>
+
+            Admin Layout
+        </div>
     )
 }
 
