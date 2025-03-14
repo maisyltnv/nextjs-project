@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-roject",
+  "name": "nextjsproject",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
     "next": "15.2.2",
-    "nextjs-roject": "file:",
+    "nextjsproject": "file:",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
