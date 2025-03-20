@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import MainLayout from "@/components/MainLayout";
+import MenuContextProvider from "@/context/MenuContext";
 
 
 export const metadata: Metadata = {
@@ -16,10 +17,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MainLayout>
-          {children}
-        </MainLayout>
+        <MenuContextProvider>
+
+          <MainLayout>
+            {children}
+          </MainLayout>
+        </MenuContextProvider>
       </body>
-    </html>
+    </html >
   );
 }
